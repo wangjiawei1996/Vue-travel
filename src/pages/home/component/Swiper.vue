@@ -20,10 +20,10 @@ export default {
       },
       swiperList: [{
         id: '0001',
-        imgUrl: '//img1.qunarzz.com/vc/99/c1/c4/3426c6a3b54ef464e40e440fe3.jpg'
+        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1809/f0/b39b64c33a62e002.jpg_750x200_3e961ce7.jpg'
       }, {
         id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1507/65/62d503e8244e7a.png_890x330_ada9b65a.png'
+        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1808/70/5603e6a535062402.jpg_750x200_2c552f2c.jpg'
       }]
     }
   }
@@ -34,10 +34,11 @@ export default {
   .wrapper >>> .swiper-pagination-bullet-active
     background: #fff
   .wrapper
-    width:100%
-    height:0
+    overflow: hidden
+    width: 100%
+    height: 0
     padding-bottom: 31.25%
     background: #eee
     .swiper-img
-      width: 100%
+      width: 117%
 </style>
