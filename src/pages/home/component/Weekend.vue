@@ -4,7 +4,7 @@
     <ul>
       <li
         class="item border-bottom"
-        v-for="item of recommendList"
+        v-for="item of list"
         :key="item.id"
         >
         <div class="item-img-wrapper">
@@ -22,25 +22,8 @@
 <script>
 export default {
   name: 'HomeWeekend',
-  data () {
-    return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1505/b8/c42368761ac6c9.jpg_r_640x214_d76a2bd5.jpg',
-        title: '兰州极地海洋世界',
-        desc: '年终Top1的排名，值得一玩'
-      }, {
-        id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1505/b8/c42368761ac6c9.jpg_r_640x214_d76a2bd5.jpg',
-        title: '兰州极地海洋世界',
-        desc: '年终Top1的排名，值得一玩'
-      }, {
-        id: '0003',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1505/b8/c42368761ac6c9.jpg_r_640x214_d76a2bd5.jpg',
-        title: '兰州极地海洋世界',
-        desc: '年终Top1的排名，值得一玩'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
@@ -48,14 +31,13 @@ export default {
 <style lang="stylus" scoped>
   @import '~styles/mixins.styl'
   .recommend-title
-    margin-top: .2rem
     line-height: .8rem
     background: #eee
     text-indent: .2rem
   .item-img-wrapper
     overflow: hidden
     height: 0
-    padding-bottom: 33.9%
+    padding-bottom: 37.09%
     .item-img
       width: 100%
   .item-info

@@ -4,7 +4,7 @@
     <ul>
       <li
         class="item border-bottom"
-        v-for="item of recommendList"
+        v-for="item of list"
         :key="item.id"
         >
         <img class="item-img" :src="item.imgUrl" />
@@ -21,25 +21,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1706/48/481516ec11298b7ba3.water.jpg_150x150_eff3aba2.jpg',
-        title: '兰州极地海洋世界',
-        desc: '年终Top1的排名，值得一玩'
-      }, {
-        id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1706/48/481516ec11298b7ba3.water.jpg_150x150_eff3aba2.jpg',
-        title: '兰州极地海洋世界',
-        desc: '年终Top1的排名，值得一玩'
-      }, {
-        id: '0003',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1706/48/481516ec11298b7ba3.water.jpg_150x150_eff3aba2.jpg',
-        title: '兰州极地海洋世界',
-        desc: '年终Top1的排名，值得一玩'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
