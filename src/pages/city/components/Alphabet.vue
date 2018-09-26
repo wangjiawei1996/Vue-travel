@@ -1,5 +1,5 @@
 <template>
-  <ul class="list" style="touch-action:none">
+  <ul class="list">
     <li
       class="item"
       v-for="item of letters"

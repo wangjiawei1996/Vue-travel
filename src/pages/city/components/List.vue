@@ -92,6 +92,7 @@ export default {
       border-color: #ccc
   .list
     overflow: hidden
+    position: absolute
     top: 1.58rem
     left: 0
     right: 0
@@ -100,6 +101,7 @@ export default {
     line-height: .54rem
     background: #eee
     padding-left: .2rem
+    color: #666
     font-size: .26rem
   .button-list
     overflow: hidden

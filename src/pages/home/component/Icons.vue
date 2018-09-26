@@ -7,8 +7,8 @@
           v-for="item of page"
           :key="item.id"
         >
-          <div class="icon-img">
-            <img class="icon-img-content" :src="item.imgUrl" />
+          <div class='icon-img'>
+            <img class='icon-img-content' :src='item.imgUrl' />
           </div>
           <p class="icon-desc">{{item.desc}}</p>
         </div>
