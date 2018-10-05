@@ -7,7 +7,7 @@
       </div>
       <div class="banner-number">
         <span class="iconfont">&#xe632;</span>
-        10
+        15
       </div>
     </div>
   </div>
