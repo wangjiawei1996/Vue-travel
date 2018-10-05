@@ -3,7 +3,7 @@
     <img class="banner-img" src="//img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_600x330_f922b488.jpg" />
     <div class="banner-info">
       <div class="banner-title">
-        长城(AAAAA景区)
+        故宫(AAAAA景区)
       </div>
       <div class="banner-number">
         <span class="iconfont">&#xe632;</span>
