@@ -6,8 +6,8 @@
         故宫(AAAAA景区)
       </div>
       <div class="banner-number">
-        <span class="iconfont">&#xe632;</span>
-        12
+        <span class="iconfont banner-icon">&#xe602;</span>
+        45
       </div>
     </div>
   </div>
@@ -35,12 +35,19 @@ export default {
       bottom: 0
       line-height: .6rem
       color: #fff
+      background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8))
       .banner-title
         flex: 1
+        font-size: .32rem
+        padding: 0 .2rem
       .banner-number
+        height: .32rem
+        line-height: .32rem
+        margin-top: .14rem
         padding: 0 .4rem
-        height: .4rem
-        line-height: .4rem
         border-radius: .2rem
         background: rgba(0, 0, 0, .8)
+        font-size: .24rem
+        .banner-icon
+          font-size: .24rem
 </style>
