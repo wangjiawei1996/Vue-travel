@@ -4,17 +4,17 @@
       tag="div"
       to="/"
       class="header-abs"
-      v-show="showAbs"
-    >
+      v-show="showAbs">
       <div class="iconfont header-abs-back">&#xe624;</div>
     </router-link>
-    <div class="header-fixed"
+    <div
+      class="header-fixed"
       v-show="!showAbs"
       :style="opacityStyle"
     >
-        <router-link to="/">
-          <div class="iconfont header-fixed-back">&#xe624;</div>
-        </router-link>
+      <router-link to="/">
+        <div class="iconfont header-fixed-back">&#xe624;</div>
+      </router-link>
       景点详情
     </div>
   </div>
@@ -44,10 +44,10 @@ export default {
       }
     }
   },
-  activated () {
+  mounted () {
     window.addEventListener('scroll', this.handleScroll)
   },
-  deactivated () {
+  unmounted () {
     window.removeEventListener('scroll', this.handleScroll)
   }
 }
